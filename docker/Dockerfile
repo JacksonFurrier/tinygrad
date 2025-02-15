@@ -23,5 +23,6 @@ RUN git remote remove origin && git remote add origin https://github.com/Qazalin
 RUN git fetch --depth 1 origin remu-server && git checkout remu-server
 RUN pip install -e .
 
+# entrypoint
 EXPOSE 80
 CMD ["/bin/bash"]
